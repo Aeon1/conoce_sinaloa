@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>3D Panels</title>
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="css/framework7.3dpanels.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    
+    <style>
+      body {
+        background: #074d55; 
+        background: -moz-radial-gradient(center, ellipse cover, #a7cfdf 0%, #23538a 100%); /* FF3.6+ */
+        background: -webkit-gradient(radial, right bottom, 0px, left top, 100%, color-stop(0%,#6967a5), color-stop(50%,#2075a1), color-stop(100%,#074d55));
+        background: -webkit-radial-gradient(right bottom, ellipse cover, #6967a5 0%, #2075a1 50%, #074d55 100%);
+        background: radial-gradient(ellipse at right bottom, #6967a5 0%, #2075a1 50%, #074d55 100%);
+        
+      }
+      .panel .page, .panel .pages, .panel {
+        background: none;
+      }
+      .panel .list-block ul {
+        background: none;
+        border:none;
+      }
+      .panel .list-block .item-link {
+        color:#fff;
+      }
+      .panel .list-block .item-link:active {
+        background: rgba(255,255,255,0.2);
+      }
+      .panel .list-block .item-inner {
+        border-bottom-color:rgba(255,255,255,0.2);
+      }
+      .panel .content-block, .panel .content-block-title {
+        color:#fff;
+      }
+    </style>
+  </head>
+  <body>
+ <!-- Status bar overlay for full screen mode (PhoneGap) -->  
+    <!-- Left panel with reveal effect-->
+  <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-reveal">
+      <div class="view">
+        <div class="pages">
+          <div class="page">
+            <div class="page-content">
+              <div class="content-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam neque tellus, dignissim quis turpis id, lacinia euismod ipsum. Pellentesque auctor laoreet velit, consectetur aliquam urna pharetra eget. Fusce hendrerit risus sit amet interdum mollis. Donec et consectetur arcu, non aliquet mauris.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-right panel-reveal">
+      <div class="view">
+        <div class="pages">
+          <div class="page">
+            <div class="page-content">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar" style="height: 50px;background: white;">
+          <div class="navbar-inner">
+            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+            <div class="center sliding">Idioma</div>
+           
+          </div>
+        </div>
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content -->
+            <div class="page-content" style="margin-top: 100px;">
+              <div class="row">
+  <div class="col-50">
+    <a href="municipios.html" class="button button-big button-red" idioma="I" id="eng">English</a>
+  </div>
+  <div class="col-50">
+    <a href="municipios.html" class="button button-big button-green" idioma="E" id="esp">Espa&ntilde;ol</a>
+  </div>
+</div>
+
+            </div>            
+          </div>
+        </div>       
+      </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>   
+    <script src="js/bd.js"></script>
+    <script src="js/framework7.min.js"></script>
+    <script src="js/framework7.3dpanels.js"></script>    
+    <script src="js/my-app.js"></script>
+    <script id="mapa" src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script src="js/map.js"></script>
+    <script>
+    //var myApp = new Framework7({swipePanel:'right'});
+    </script>
+  </body>
+</html>
