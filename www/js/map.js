@@ -1,7 +1,6 @@
 function initialize(coord) {
     cc=coord.split(',');
   var myLatlng = new google.maps.LatLng(cc[0],cc[1]);//-25.363882,131.044922);
-  console.log(myLatlng);
   var mapOptions = {
     zoom: 12,
     center: myLatlng

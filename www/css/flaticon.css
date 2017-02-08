@@ -17,12 +17,30 @@ margin-left: 20px;
 }.flaticon-arrowheads3:before {
 	content: "\e000";
 }
-.flaticon-cutlery6:before {
+.flaticon-call37:before {
 	content: "\e001";
 }
-.flaticon-motel:before {
+.flaticon-car223:before {
 	content: "\e002";
 }
-.flaticon-travel3:before {
+.flaticon-climbing5:before {
 	content: "\e003";
+}
+.flaticon-cutlery6:before {
+	content: "\e004";
+}
+.flaticon-greece1:before {
+	content: "\e005";
+}
+.flaticon-info43:before {
+	content: "\e006";
+}
+.flaticon-transport533:before {
+	content: "\e007";
+}
+.flaticon-travel3:before {
+	content: "\e008";
+}
+.flaticon-tripadvisor:before {
+	content: "\e009";
 }
